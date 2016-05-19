@@ -1,0 +1,7 @@
+def vertxVersion = '3.2.1'
+
+dependencies {
+    compile "io.vertx:vertx-hazelcast:$vertxVersion"
+    compile "io.vertx:vertx-rx-java:$vertxVersion"
+    compile "io.vertx:vertx-redis-client:$vertxVersion"
+}
