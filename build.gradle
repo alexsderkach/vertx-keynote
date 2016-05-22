@@ -1,0 +1,22 @@
+def javaLangVersion = 1.8
+def vertxVersion = '3.2.1'
+
+subprojects {
+    apply plugin: 'java'
+
+    sourceCompatibility = javaLangVersion
+    targetCompatibility = javaLangVersion
+
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        compile "io.vertx:vertx-core:$vertxVersion"
+        compile "io.vertx:vertx-web:$vertxVersion"
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.10'
+}

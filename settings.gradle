@@ -1,0 +1,6 @@
+rootProject.name = 'vertx-keynote'
+include '1-core'
+include '2-concurrency'
+include '3-message_client'
+include '2-message_client'
+
